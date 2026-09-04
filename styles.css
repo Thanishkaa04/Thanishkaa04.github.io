@@ -153,7 +153,26 @@ a {
 }
 
 .hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem 1.8rem;
   padding: 6.5rem 0 4rem;
+}
+
+.hero-photo {
+  width: 132px;
+  height: 132px;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--violet) 28%, var(--line));
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  min-width: 0;
 }
 
 .eyebrow,
@@ -521,6 +540,15 @@ a {
 
   .hero {
     padding-top: 4.2rem;
+  }
+
+  .hero-photo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
   }
 }
 
