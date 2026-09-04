@@ -153,17 +153,20 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 176px;
-  align-items: start;
-  column-gap: 2.4rem;
   padding: 6.5rem 0 4rem;
+}
+
+.hero-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
 }
 
 .hero-photo {
   width: 176px;
   height: 176px;
-  margin-top: 2.15rem;
+  flex: 0 0 176px;
   object-fit: cover;
   object-position: center 16%;
   border-radius: 22px;
@@ -540,14 +543,16 @@ a {
 
   .hero {
     padding-top: 4.2rem;
-    grid-template-columns: minmax(0, 1fr) 112px;
-    column-gap: 1.1rem;
+  }
+
+  .hero-heading {
+    gap: 1rem;
   }
 
   .hero-photo {
     width: 112px;
     height: 112px;
-    margin-top: 1.7rem;
+    flex-basis: 112px;
     border-radius: 16px;
   }
 
