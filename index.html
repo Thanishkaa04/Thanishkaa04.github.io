@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thanishkaa Saravanane | Research &amp; Engineering</title>
-  <meta name="description" content="Portfolio of Thanishkaa Saravanane. I build software and intelligent systems across machine learning, computer vision, control, full-stack development, and computational neuroscience." />
+  <meta name="description" content="Portfolio of Thanishkaa Saravanane. I build software and intelligent systems across machine learning, computer vision, control systems, full-stack development, and computational neuroscience." />
   <meta name="author" content="Thanishkaa Saravanane" />
   <meta property="og:title" content="Thanishkaa Saravanane | Research & Engineering" />
-  <meta property="og:description" content="Machine learning, computer vision, control systems, and full-stack development." />
+  <meta property="og:description" content="I build software and intelligent systems across machine learning, computer vision, control systems, full-stack development, and computational neuroscience." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,22 +43,21 @@
       <p class="eyebrow">University of Washington · Paul G. Allen School</p>
       <h1>Thanishkaa Saravanane</h1>
       <p class="lede">
-        I build software and intelligent systems across machine learning, computer vision, control, full-stack development, and computational neuroscience.
+        I build software and intelligent systems across machine learning, computer vision, control systems, full-stack development, and computational neuroscience.
       </p>
-      <div class="hero-meta">
-        <span>B.S. Computer Science</span>
-        <span>Minors in Entrepreneurship &amp; Neural Computation</span>
-        <span>Expected Spring 2028</span>
-      </div>
+      <p class="hero-meta">
+        I am pursuing a B.S. in Computer Science with minors in Entrepreneurship and Neural Computation, expected Spring 2028.
+      </p>
       <div class="hero-links">
-        <a class="btn btn-primary" href="#work">See selected work</a>
+        <a class="btn btn-primary" href="#work">Explore my work</a>
         <a class="btn btn-ghost" href="mailto:thanishkaas07@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="assets/Thanishkaa_Saravanane_Resume.pdf" download>Download résumé</a>
       </div>
     </section>
 
     <section class="work" id="work">
       <div class="section-head">
-        <h2>Selected work</h2>
+        <h2>Featured work</h2>
       </div>
 
       <article class="case" id="biorobotics">
@@ -66,21 +65,21 @@
           <p class="case-meta">Biorobotics Lab · UW · Jan 2026 – Present</p>
           <h3>Real-time lane tracking &amp; adaptive assist</h3>
           <p>
-            A closed-loop 1-D path-tracking testbed for studying how people and machines share control.
+            This is a closed-loop 1-D path-tracking testbed for studying how people and machines share control.
             Participants steer a plant along a prime-frequency sum-of-sines reference while first- or
             second-order dynamics are integrated with RK4. The same protocol runs on a trackpad,
             USB slider, and Novint Falcon haptic device.
           </p>
           <ul class="facts">
-            <li><strong>60 Hz</strong> real-time loop with overrun diagnostics</li>
-            <li><strong>60+</strong> human trials logged for RMS error, effort, and FFT validation</li>
-            <li><strong>Normalized LMS</strong> adaptive helper with game-theoretic LQ framing</li>
+            <li>The real-time loop runs at <strong>60 Hz</strong> with overrun diagnostics.</li>
+            <li>I logged <strong>60+</strong> human trials for tracking error, control effort, and frequency-domain analysis.</li>
+            <li>An adaptive helper uses <strong>normalized LMS</strong> with a game-theoretic LQ framing.</li>
           </ul>
           <p>
-            Raw Falcon position mixes human and machine motion, so I built a calibrated spring-damper
-            predictor to recover the human contribution, then estimate the human control policy from
-            observed actions with least-mean-squares gradient descent. Assist gains are bounded so the
-            helper stays stable and physically safe.
+            Because Falcon position reflects both user input and machine-applied motion, I built a
+            calibrated predictor to estimate the machine contribution and recover the human command
+            used for online policy estimation. The recovered command feeds the LMS-based human-policy
+            estimator, while bounded assist gains limit unstable or excessive helper behavior.
           </p>
           <div class="tags">
             <span>Python</span><span>NumPy</span><span>Tkinter</span><span>RK4</span>
@@ -91,13 +90,13 @@
           <button class="media-open" type="button" data-full="assets/biorobotics-lane-tracking.png" data-alt="Real-time lane tracking interface with a tan sum-of-sines reference path and a purple diamond cursor">
             <img src="assets/biorobotics-lane-tracking.png" alt="Real-time lane tracking interface: tan sum-of-sines reference path, purple diamond cursor, and tracking-error legend" />
           </button>
-          <figcaption>Reference path, controlled cursor, and instantaneous tracking error. Inputs: trackpad, USB slider, Novint Falcon.</figcaption>
+          <figcaption>The figure shows the reference path, controlled cursor, and instantaneous tracking error. Inputs include a trackpad, USB slider, and Novint Falcon.</figcaption>
         </figure>
       </article>
 
       <article class="case case-alt" id="bair">
         <div class="case-copy">
-          <p class="case-meta">Bair Lab · UW Neurobiology &amp; Biophysics · Mar 2024 – Present</p>
+          <p class="case-meta">Bair Lab · UW · Mar 2024 – Present</p>
           <h3>Cortical maps, Suite2p, and ViT color sensitivity</h3>
           <p>
             In the Bair Lab I studied visual selectivity in macaque V1 from two-photon calcium imaging
@@ -111,25 +110,24 @@
           </a>
           <p>
             My current project compares that biology to deep networks. I compute a Color Sensitivity
-            Index (CSI / CRI) for Vision Transformer patches across all 12 encoder layers. I am
-            extending this to fill out line invariance and comparing all of this to AlexNet and
-            biological neurons.
+            Index (CSI) for Vision Transformer patches across all 12 encoder layers. I am extending
+            this analysis to fill-out line invariance and comparisons with AlexNet and biological
+            neurons.
           </p>
           <ul class="facts">
-            <li><strong>196</strong> ViT-B/16 patches (14×14 grid on 224×224)</li>
-            <li><strong>12</strong> encoder layers, full and partial networks</li>
-            <li><strong>Patch 91</strong> used as a reference for layer-wise histograms and spatial dropoff</li>
+            <li>I analyze <strong>196</strong> ViT-B/16 patches on a 14×14 grid at 224×224.</li>
+            <li>The comparison covers all <strong>12</strong> encoder layers in full and partial networks.</li>
           </ul>
           <div class="tags">
             <span>Python</span><span>PyTorch</span><span>CUDA</span><span>Suite2p</span>
-            <span>SciPy</span><span>Linux</span>
+            <span>SciPy</span><span>Pearson correlation</span><span>Fisher z-transform</span>
           </div>
         </div>
         <figure class="case-media">
           <button class="media-open" type="button" data-full="assets/csi-patch-91.png" data-alt="Twelve stacked histograms of CSI values for patch 91 across encoder layers enc1 through enc12">
             <img src="assets/csi-patch-91.png" alt="Stacked histograms of Color Sensitivity Index values for ViT patch 91, layers enc1 through enc12" />
           </button>
-          <figcaption>CSI distributions for patch 91. Variance tightens from enc1 to enc12 as representations become more concentrated.</figcaption>
+          <figcaption>The figure shows CSI value distributions for patch 91 across encoder layers enc1 through enc12.</figcaption>
         </figure>
       </article>
 
@@ -138,21 +136,22 @@
           <p class="case-meta">Independent project · Apr 2024 – Jun 2025</p>
           <h3>Real-time EEG confusion classifier</h3>
           <p>
-            A full-stack BCI demo that streams 11 EEG band-power features over WebSockets and runs five
-            models in parallel to predict whether a student is confused while watching lecture video.
-            Models were trained on 12,000+ samples; engineered Theta/Beta and Theta/Alpha ratios
-            improved discrimination over raw band powers.
+            This is a full-stack BCI demo, built with React, FastAPI, and WebSockets, that predicts whether a
+            student is confused while watching lecture video. Models were trained on 12,000+ samples
+            with a 36-feature preprocessing and feature-engineering pipeline. Engineered Theta/Beta
+            and Theta/Alpha ratios improved discrimination over raw band powers. The live deployment
+            streams 11 of those features over WebSockets and runs five models in parallel.
           </p>
           <ul class="facts">
-            <li><strong>79.36%</strong> validation accuracy: Random Forest, ~2&nbsp;ms</li>
-            <li><strong>5</strong> concurrent models: RF, NN, RNN, ResNet, CNN-RNN hybrid</li>
-            <li><strong>React + FastAPI</strong> dashboard for confidence, latency, and agreement</li>
+            <li>The best validation accuracy is <strong>79.36%</strong>.</li>
+            <li>The demo runs <strong>5</strong> concurrent models: Random Forest, NN, RNN, ResNet, and CNN-RNN.</li>
+            <li>Random Forest inference latency is about <strong>2 ms</strong>.</li>
           </ul>
           <p>
             The UI lets you pick a subject and video topic, control stream speed, and watch each
-            architecture vote 0 (not confused) or 1 (confused) with live confidence. A schema-validated
-            API also accepts uploaded EEG files for offline analytics. The repo is set up so you can
-            clone it from GitHub and run the full demo locally.
+            architecture vote 0 (not confused) or 1 (confused) with live confidence and its own
+            latency. A schema-validated API also accepts uploaded EEG files for offline analytics.
+            The repo is set up so you can clone it from GitHub and run the full demo locally.
           </p>
           <div class="tags">
             <span>PyTorch</span><span>scikit-learn</span><span>React</span>
@@ -167,7 +166,7 @@
           <button class="media-open" type="button" data-full="assets/eeg-bci-dashboard.png" data-alt="Dark-mode real-time BCI dashboard comparing five EEG classifiers">
             <img src="assets/eeg-bci-dashboard.png" alt="Real-time BCI deployment dashboard with five models, confidence bars, and stream progress" />
           </button>
-          <figcaption>Live deployment demo: five models, subject/topic controls, and per-model confidence and latency.</figcaption>
+          <figcaption>The live deployment demo includes five models, subject and topic controls, and per-model confidence and latency.</figcaption>
         </figure>
       </article>
     </section>
@@ -181,10 +180,10 @@
           <p class="case-meta">Apr 2026 – Present</p>
           <h3>Predictive Women’s Health Engine</h3>
           <p>
-            Two-stage clinical risk platform. Classifiers (XGBoost, Random Forest) cover 10+
-            reproductive conditions from 30+ symptoms, currently above 80% recall. Predictions feed a
-            deterministic / RAG layer with 70+ literature-derived multipliers that project long-term
-            cardiovascular risk for physician review.
+            This is a two-stage clinical risk platform. Classifiers (XGBoost, Random Forest) cover 10+
+            reproductive conditions from 30+ symptoms and currently achieve above 80% recall. Predictions feed a
+            deterministic rules and RAG layer with 70+ literature-derived risk multipliers that
+            project long-term cardiovascular risk for physician review of earlier preventive screening.
           </p>
           <div class="tags">
             <span>XGBoost</span><span>RAG</span><span>Full-stack ML</span>
@@ -194,10 +193,10 @@
           <p class="case-meta">Apr 2026 – Present</p>
           <h3>Git Clarity</h3>
           <p>
-            VS Code extension that draws live branch history as lane-based graphs, scans diffs for
-            exposed credentials, and uses the Gemini API for spec-grounded commit impact. A Firebase
-            Realtime Database overlays editable summaries on the tree and flags merge-conflict risk
-            from changed-file overlap.
+            Git Clarity is a VS Code extension that draws live branch history as lane-based graphs via the Git CLI,
+            scans diffs for exposed credentials, and uses the Gemini API for spec-grounded analysis
+            of how each commit affects the broader codebase. A Firebase Realtime Database overlays
+            editable summaries on the tree and flags merge-conflict risk from changed-file overlap.
           </p>
           <div class="tags">
             <span>TypeScript</span><span>Git CLI</span><span>Gemini API</span><span>Firebase</span>
@@ -206,31 +205,30 @@
       </div>
     </section>
 
+    <section class="publication" id="publication">
+      <div class="section-head">
+        <h2>Research &amp; publication</h2>
+      </div>
+      <article class="card">
+        <p class="case-meta">Published in IJHSR · 2023</p>
+        <h3>Limitations of Data in Comparing Humans and AI</h3>
+        <p>
+          I synthesized 25+ academic sources across theory of mind, Marr’s Vision, competence vs. performance,
+          and other cognitive frameworks to examine limitations in empirical comparisons of human and
+          artificial intelligence.
+        </p>
+        <a class="text-link" href="assets/ijhsr-limitations-of-data.pdf" target="_blank" rel="noopener noreferrer">
+          Read the paper
+          <span aria-hidden="true">↗</span>
+        </a>
+      </article>
+    </section>
+
     <section class="experience" id="experience">
       <div class="section-head">
-        <h2>Experience</h2>
+        <h2>Other experience</h2>
       </div>
       <ol class="timeline">
-        <li>
-          <div class="when">Jan 2026 – Present</div>
-          <div>
-            <h3>Research Intern, Biorobotics Lab</h3>
-            <div class="tags">
-              <span>Python</span><span>NumPy</span><span>Real-time control</span>
-              <span>System identification</span><span>Haptics</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Mar 2024 – Present</div>
-          <div>
-            <h3>Research Intern, Bair Lab</h3>
-            <div class="tags">
-              <span>Python</span><span>PyTorch</span><span>Suite2p</span>
-              <span>SciPy</span><span>Computer vision</span>
-            </div>
-          </div>
-        </li>
         <li>
           <div class="when">Jan 2026 – Jun 2026</div>
           <div>
@@ -245,11 +243,18 @@
           <div>
             <h3>Machine Learning Engineer Intern, MulticoreWare</h3>
             <div class="tags">
-              <span>PyTorch</span><span>TensorFlow</span><span>ONNX</span><span>NLP</span>
+              <span>PyTorch</span><span>TensorFlow</span><span>ONNX Runtime</span><span>NLP</span>
             </div>
           </div>
         </li>
       </ol>
+    </section>
+
+    <section class="leadership" id="leadership">
+      <p>
+        Beyond engineering, I founded Smile Squad, a middle-school mental-health and academic mentoring
+        initiative, raising $2K+ with Spirit of 12 Seahawks/NAMI and organizing webinars and one-on-one mentoring.
+      </p>
     </section>
 
     <section class="contact" id="contact">

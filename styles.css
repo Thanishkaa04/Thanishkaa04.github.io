@@ -143,7 +143,9 @@ a {
 .hero,
 .work,
 .more,
+.publication,
 .experience,
+.leadership,
 .contact,
 .site-footer {
   width: min(var(--max), 88vw);
@@ -188,18 +190,10 @@ a {
 }
 
 .hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.7rem;
+  max-width: 42rem;
   margin: 1.8rem 0 2rem;
   color: var(--ink-soft);
   font-size: 0.95rem;
-}
-
-.hero-meta span:not(:last-child)::after {
-  content: "·";
-  margin-left: 0.7rem;
-  color: var(--gold);
 }
 
 .hero-links,
@@ -237,9 +231,30 @@ a {
 
 .work,
 .more,
+.publication,
 .experience,
+.leadership,
 .contact {
   padding: 4.5rem 0 1rem;
+}
+
+.leadership {
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+.leadership p {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.publication .card h3 {
+  font-size: 1.45rem;
+}
+
+.publication .text-link {
+  margin-bottom: 0;
 }
 
 .work {
